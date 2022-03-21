@@ -1,6 +1,6 @@
 # Pi-Hole
 We can use this tool to block anything we want in our local network such ads
-so here i'm describe how i create my raspberrypi dns server in my local network , i'm use it to blocking any ads but you can also block what ever you want.
+so here i'm describe how i create my raspberrypi dns server in my local network , i'm using it to block any ads, but you can also block what ever you want.
 step 1 : 
 You Will Need:
 1) Any Raspberry Pi with Ethernet
