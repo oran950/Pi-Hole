@@ -1,20 +1,10 @@
 # Web-Scraping
 
-from bs4 import BeautifulSoup
-import requests
+Web Data Scarping  is a technique that automatically scans content from websites
 
-html_text=requests.get('https://www.payngo.co.il/computers-pcs/computing-gaming/laptops.html').text
-soup = BeautifulSoup(html_text, 'lxml')
-products = soup.find_all('li',class_='item product product-item product-item-5')
+And process it in order to display it as you wish.
 
-for product in products:
-    price = product.find('span',class_='price').text.replace(' ', '')
-    computer_type = product.find('strong', class_='product name product-item-name product_name').text.replace(' ','')
-    more_info = product.div.a['href']
-    print(f"Type Name:{computer_type.strip()}")
-    print(f"Price:{price}")
-    print(f"More Info:{more_info}")
-    print(" ")
+The algorithm that performs the "scratching" usually also includes a type of artificial intelligence that knows how to separate different pieces of information such as people's names, technical details, photos, phone numbers, e-mail addresses and so on, so you can enter any of these types of information To a separate field in the database used by the algorithm (hence the information obtained is ultimately considered structured data).
 
-
+In the code I wrote I wanted to collect information from a particular site (price, model, link to the Specific model and more) about different models of laptops.
 
