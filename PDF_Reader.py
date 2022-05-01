@@ -6,6 +6,7 @@ print(read_the_pdf.numPages)
 single_page = read_the_pdf.getPage(45)
 print(single_page.extractText())
 
-for x in read_the_pdf.getPage():
-    single_page = read_the_pdf.getPage(x)
-    print(x)
+for y in range(read_the_pdf.numPages):
+    for x in read_the_pdf.getPage(y):
+        single_page = read_the_pdf.getPage(y)
+        print(single_page.extractText())
